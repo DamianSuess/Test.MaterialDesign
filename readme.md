@@ -4,7 +4,7 @@ This is an example of Material Design using Xamarin.Forms and the [Xamarin.Forms
 For theme another related example, check out my [Test.AppThemes](https://github.com/DamianSuess/Test.AppThemes) repo.
 
 ## Material Design
-
+![](Sample1.png)
 
 ## Resources
 * [Xamarin.Forms Material Visual](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual/material-visual)
