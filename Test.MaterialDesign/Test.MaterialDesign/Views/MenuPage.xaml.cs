@@ -1,9 +1,7 @@
-﻿using Test.MaterialDesign.Models;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
+using Test.MaterialDesign.Models;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Test.MaterialDesign.Views
 {
@@ -12,17 +10,18 @@ namespace Test.MaterialDesign.Views
   [DesignTimeVisible(false)]
   public partial class MenuPage : ContentPage
   {
-    MainPage RootPage { get => Application.Current.MainPage as MainPage; }
-    List<HomeMenuItem> menuItems;
+    private MainPage RootPage { get => Application.Current.MainPage as MainPage; }
+    private List<HomeMenuItem> menuItems;
+
     public MenuPage()
     {
       InitializeComponent();
 
       menuItems = new List<HomeMenuItem>
-            {
-                new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="About" }
-            };
+      {
+        new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
+        new HomeMenuItem {Id = MenuItemType.About, Title="About" }
+      };
 
       ListViewMenu.ItemsSource = menuItems;
 

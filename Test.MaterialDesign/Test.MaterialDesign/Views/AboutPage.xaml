@@ -6,6 +6,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:Test.MaterialDesign.ViewModels"
              Title="{Binding Title}"
+             Visual="Material"
              mc:Ignorable="d">
 
   <ContentPage.BindingContext>

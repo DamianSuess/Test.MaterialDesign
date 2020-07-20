@@ -1,10 +1,7 @@
-﻿using System;
-using System.ComponentModel;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
+﻿using System.ComponentModel;
 using Test.MaterialDesign.Models;
 using Test.MaterialDesign.ViewModels;
+using Xamarin.Forms;
 
 namespace Test.MaterialDesign.Views
 {
@@ -13,7 +10,7 @@ namespace Test.MaterialDesign.Views
   [DesignTimeVisible(false)]
   public partial class ItemDetailPage : ContentPage
   {
-    ItemDetailViewModel viewModel;
+    private ItemDetailViewModel viewModel;
 
     public ItemDetailPage(ItemDetailViewModel viewModel)
     {

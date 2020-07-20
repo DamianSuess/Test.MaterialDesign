@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
 using Test.MaterialDesign.Models;
+using Xamarin.Forms;
 
 namespace Test.MaterialDesign.Views
 {
@@ -14,7 +11,8 @@ namespace Test.MaterialDesign.Views
   [DesignTimeVisible(false)]
   public partial class MainPage : MasterDetailPage
   {
-    Dictionary<int, NavigationPage> MenuPages = new Dictionary<int, NavigationPage>();
+    private Dictionary<int, NavigationPage> MenuPages = new Dictionary<int, NavigationPage>();
+
     public MainPage()
     {
       InitializeComponent();
@@ -33,6 +31,7 @@ namespace Test.MaterialDesign.Views
           case (int)MenuItemType.Browse:
             MenuPages.Add(id, new NavigationPage(new ItemsPage()));
             break;
+
           case (int)MenuItemType.About:
             MenuPages.Add(id, new NavigationPage(new AboutPage()));
             break;

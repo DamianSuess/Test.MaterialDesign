@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.MaterialDesign.UWP", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.MaterialDesign.Android", "Test.MaterialDesign\Test.MaterialDesign.Android\Test.MaterialDesign.Android.csproj", "{B7381E18-8762-41B1-8124-D212C991B513}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.MaterialDesign", "Test.MaterialDesign\Test.MaterialDesign\Test.MaterialDesign.csproj", "{6F71A113-E53D-4D49-96A9-1950EEBC0A7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.MaterialDesign", "Test.MaterialDesign\Test.MaterialDesign\Test.MaterialDesign.csproj", "{6F71A113-E53D-4D49-96A9-1950EEBC0A7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{DB927FF1-528B-4118-BC7E-A6B7B3551D46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -96,6 +98,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{048CA055-EB44-4D7B-B60D-02CBD405F739} = {DB927FF1-528B-4118-BC7E-A6B7B3551D46}
+		{B7381E18-8762-41B1-8124-D212C991B513} = {DB927FF1-528B-4118-BC7E-A6B7B3551D46}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D77B920A-3807-499C-8008-486CED41660C}
